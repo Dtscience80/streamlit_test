@@ -207,6 +207,5 @@ if file is not None:
     df= pd.read_csv(file)
     st.dataframe(df)
 
+st.dataframe(df)
 st.dataframe(df.describe())
-df_html = df.to_html()
-st.write(df_html, unsafe_allow_html=True)
