@@ -207,4 +207,4 @@ if file is not None:
     df= pd.read_csv(file)
     st.dataframe(df)
 
-
+st.dataframe(df.describe())
