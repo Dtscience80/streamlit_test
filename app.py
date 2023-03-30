@@ -208,3 +208,4 @@ if file is not None:
     st.dataframe(df)
 
 st.dataframe(df.describe())
+st.dataframe(df.head())
