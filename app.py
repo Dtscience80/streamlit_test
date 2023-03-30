@@ -204,7 +204,8 @@ from io import StringIO
 file = st.file_uploader("Please select a file to upload")
 if file is not None:
     #Can be used wherever a "file-like" object is accepted:
-    df= pd.read_csv(file)
+    #df= pd.read_csv(file)
+    df = pd.read_excel(file)
     st.dataframe(df)
 
 st.dataframe(df)
