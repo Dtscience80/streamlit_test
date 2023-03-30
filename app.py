@@ -208,4 +208,5 @@ if file is not None:
     st.dataframe(df)
 
 st.dataframe(df.describe())
-st.write(df)
+df_html = df.to_html()
+st.write(df_html, unsafe_allow_html=True)
