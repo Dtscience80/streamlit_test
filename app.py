@@ -203,7 +203,7 @@ from io import StringIO
 #upload single file and display it as a dataframe
 file = st.file_uploader("Please select a file to upload")
 #file = st.file_uploader("Upload file Excel", type=["xlsx", "xls"])
-url = 'https://github.com/Dtscience80/Project_ISAST_2022/blob/main/df_minmax.csv'
+url = 'https://raw.githubusercontent.com/Dtscience80/Project_ISAST_2022/main/df_minmax.csv'
 data = pd.read_csv(url)
 if file is not None:
     #Can be used wherever a "file-like" object is accepted:
