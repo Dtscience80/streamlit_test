@@ -211,5 +211,5 @@ if file is not None:
     df = pd.read_excel(file)
     st.dataframe(data)
 
-st.dataframe(df, width=1000)
-st.dataframe(df.describe())
+st.dataframe(data, width=1000)
+st.dataframe(data.describe())
